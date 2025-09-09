@@ -124,7 +124,20 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 4878523198782545409, guid: b328d903f3d6cab40bdffa8df664ec95, type: 3}
   m_PrefabInstance: {fileID: 1690511761}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &3236159
+--- !u!114 &3236160
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3236157}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5772fc8be4529842a7f5bfce99635fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 0
+--- !u!114 &3236162
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -136,7 +149,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebeccd6eace3e564aa14322a41c8c194, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 20
+  moveObj: {fileID: 0}
 --- !u!1 &412220224
 GameObject:
   m_ObjectHideFlags: 0
@@ -453,7 +466,10 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 4878523198782545409, guid: b328d903f3d6cab40bdffa8df664ec95, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 3236159}
+      addedObject: {fileID: 3236160}
+    - targetCorrespondingSourceObject: {fileID: 4878523198782545409, guid: b328d903f3d6cab40bdffa8df664ec95, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3236162}
   m_SourcePrefab: {fileID: 100100000, guid: b328d903f3d6cab40bdffa8df664ec95, type: 3}
 --- !u!1 &2101473001
 GameObject:
@@ -465,7 +481,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2101473002}
   m_Layer: 0
-  m_Name: Head
+  m_Name: CamPos
   m_TagString: Untagged
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
