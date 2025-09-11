@@ -3,28 +3,29 @@ using UnityEngine.UI;
 
 public class Selectable : MonoBehaviour
 {
+    [SerializeField] Text titleText; 
     public void Enter()
     {
-        Button button = GetComponent<Button>(); 
-        button.GetComponentInChildren<Text>().fontSize = 100;
+        titleText.fontSize = 100;
     }
 
     public void Exit()
     {
-        Button button = GetComponent<Button>();
-        button.GetComponentInChildren<Text>().fontSize = 75;
+        titleText.fontSize = 75;
     }
 
     public void Down()
     {
-        Button button = GetComponent<Button>();
-        button.GetComponentInChildren<Text>().fontSize = 50;
+        titleText.fontSize = 50; 
+    }
+
+    private void Awake()
+    {
+        //titleText = GetComponentInChildren<Text>(); 
     }
 
     void Start()
-    { 
-
-        
+    {         
     }
 
   
